@@ -1,0 +1,79 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref}
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Hannah M. Zabarsky}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\section{CONTACT} 21 Craigie Street, Apt. 2 \hfill \href{mailto:me@hannahzabarsky.com}{me@hannahzabarsky.com} \\
+				Somerville, MA 02134 \hfill \href{http://www.github.com/hzab}{github.com/hzab} \\
+				(203) 528-1329 \hfill \href{http://www.hannahzabarsky.com}{hannahzabarsky.com} \\
+
+
+\begin{resume}
+ 
+ 
+\section{SKILLS} {\sl Languages:} Ruby, SQL, JavaScript, JQuery, HTML, CSS \\
+	       {\sl Software \& Tools:} Ruby on Rails, PostgreSQL, Git, GitHub, Foundation \\
+
+\section{PROJECTS} {\sl Breakable Toy: WAYWT } \hfill \href{http://www.waywt.me}{waywt.me} \\
+                WAYWT is a lookbook website featuring user-submitted outfit images by people all over the world.
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Implemented image uploading using Rail’s gem Carrierwave with a focus on testing user’s capabilities
+                \item Created a search function based off of ActiveRecord queries to return user information
+		\item Utilized Foundation to make website scalable for mobile interfaces
+                \end{itemize}
+
+ 		{\sl IRC Bot}\hfill \href{https://github.com/hzab/bot}{github.com/hzab/bot} 
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Used rails gem Cinch to create an Internet Relay Chat chat bot that could interact with other users
+                \item Scraped external websites based on user’s matched search queries to Google and Urban Dictionary using Nokogiri
+		\end{itemize}
+
+ 
+                {\sl Snake} \hfill            \href{https://github.com/hzab/SnakeGame}{github.com/hzab/SnakeGame}
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Utilized jQuery and HTML5 canvas to make a working game of Snake
+                 \end{itemize}
+                 {\sl Cookie Clicker Script} \hfill            \href{https://github.com/hzab/SnakeGame}{github.com/hzab/SnakeGame}
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Utilized jQuery selectors in order to manipulate the game ‘Cookie Clicker’ to click selectable options and upgrade game play quickly
+                 \end{itemize}
+
+  
+\section{EXPERIENCE}  {\bf Launch Academy} \hfill February 2014 - April 2014 \\
+			{\sl Apprentice Ruby on Rails Developer} \hfill Boston, MA \
+			\begin{itemize}  \itemsep -2pt %reduce space between items
+			\item Professional training in full-stack Ruby on Rails web development with a focus on Agile methods
+			\item  Responsible for production and creation of a new web app, from conception and planning to implimentation using Ruby on Rails in order to create a fully functional app.
+			\item Focus on test-driven development, object-oriented programming in Ruby, and pair programming
+
+			\end{itemize}
+			{\bf Starbucks Coffee Co.} \hfill November 2011 - December 2013 \\
+			{\sl Barista } \hfill Cambridge, MA \
+			\begin{itemize} \itemsep -2pt %reduce space between items
+			\item Trained new team members and was in training for management positions
+			\end{itemize}
+
+\section{EDUCATION} {\sl Bachelor of Arts,} Counseling Psychology \hfill September 2010 - May 2012\\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                Lesley University, Cambridge, MA 
+                 (70 credits completed) \\
+                
+ 
+\end{resume}
+\end{document}
+
+
+
+

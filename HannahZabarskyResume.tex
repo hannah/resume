@@ -1,75 +1,77 @@
 % LaTeX resume using res.cls
+\let\nofiles\relax
 \documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{helvet} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
-\setlength{\textwidth}{5.1in} % set width of text portion
+\setlength{\textwidth}{5.2in} % set width of text portion
+\renewcommand{\familydefault}{\sfdefault}
+
 
 \begin{document}
+\begin{resume}\vspace{-1cm}
 
 % Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Hannah M. Zabarsky}
+ \moveleft.5\hoffset\centerline{\large\bf Hannah Zabarsky}
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
-\section{CONTACT} 21 Craigie Street, Apt. 2 \hfill \href{mailto:me@hannahzabarsky.com}{me@hannahzabarsky.com} \\
-				Somerville, MA 02134 \hfill \href{http://www.github.com/hzab}{github.com/hzab} \\
+
+
+\section{CONTACT} 21 Craigie Street, Apt. 2 \hfill \href{mailto:hello@hannahzabarsky.com}{me@hannahzabarsky.com} \\
+				Somerville, MA 02134 \hfill \href{http://www.github.com/hannah}{github.com/hannah} \\
 				(203) 528-1329 \hfill \href{http://www.hannahzabarsky.com}{hannahzabarsky.com} \\
 
 
-\begin{resume}
- 
- 
-\section{SKILLS} {\sl Languages:} Ruby, SQL, JavaScript, JQuery, HTML, CSS \\
-	       {\sl Software \& Tools:} Ruby on Rails, PostgreSQL, Git, GitHub, Foundation \\
 
-\section{PROJECTS} {\sl Breakable Toy: WAYWT } \hfill \href{http://www.waywt.me}{waywt.me} \\
-                WAYWT is a lookbook website featuring user-submitted outfit images by people all over the world.
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Implemented image uploading using Railâ€™s gem Carrierwave with a focus on testing userâ€™s capabilities
-                \item Created a search function based off of ActiveRecord queries to return user information
-		\item Utilized Foundation to make website scalable for mobile interfaces
-                \end{itemize}
+ \section{EXPERIENCE} {\bf Eyenetra}\hfill December 2014-present \\
+			{\sl Software Engineer} \hfill Somerville, MA\
+			\begin{itemize} \itemsep -2pt
+			\item Created a fully functional responsive Ember.js web-app with a RESTful Rails API backend
+			\item Implemented responsive design in bootstrap, handling for mobile and various device sizes
+			\item Set up Amazon ec2 instances and configured deployment
+			\item Improved existing documentation by leading in good commit message standards
+			\item Made and maintained company HipChat bot		
+			\end{itemize} 
+			
+			{\bf Dressed.so } \hfill  
 
- 		{\sl IRC Bot}\hfill \href{https://github.com/hzab/bot}{github.com/hzab/bot} 
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Used rails gem Cinch to create an Internet Relay Chat chat bot that could interact with other users
-                \item Scraped external websites based on userâ€™s matched search queries to Google and Urban Dictionary using Nokogiri
-		\end{itemize}
-
- 
-                {\sl Snake} \hfill            \href{https://github.com/hzab/SnakeGame}{github.com/hzab/SnakeGame}
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Utilized jQuery and HTML5 canvas to make a working game of Snake
-                 \end{itemize}
-                 {\sl Cookie Clicker Script} \hfill            \href{https://github.com/hzab/cookie_clickerer}{github.com/hzab/cookieclickerer}
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Utilized jQuery selectors in order to manipulate the game â€˜Cookie Clickerâ€™ to click selectable options and upgrade game play quickly
-                 \end{itemize}
-
-  
-\section{EXPERIENCE}  {\bf Launch Academy} \hfill February 2014 - April 2014 \\
+			{\bf Launch Academy} \hfill February 2014 - April 2014 \\
 			{\sl Apprentice Ruby on Rails Developer} \hfill Boston, MA \
 			\begin{itemize}  \itemsep -2pt %reduce space between items
 			\item Professional training in full-stack Ruby on Rails web development with a focus on Agile methods
 			\item  Responsible for production and creation of a new web app, from conception and planning to implementation using Ruby on Rails in order to create a fully functional app.
 			\item Focus on test-driven development, object-oriented programming in Ruby, and pair programming
 
-			\end{itemize}
+			\smallskip
+			{\sl Projects }\\
+			{\bf Breakable Toy: WAYWT } \hfill \href{http://github.com/hannah/waywt}{waywt.me} \\
+                 Implemented image uploading using Rails gem Carrierwave with a focus on testing user's capabilities, with a front end using Foundation to make website scalable for mobile interfaces.
+
+
+ 		{\bf IRC Bot}\hfill \href{https://github.com/hzab/bot}{github.com/hannah/bot}\\ 
+		Used the gem Cinch to create an Internet Relay Chat chat bot that could interact with other users and scrape external websites for search query result
+		
+                 {\bf Cookie Clicker Script} \hfill \href{https://github.com/hannah/cookie_clickerer}{github.com/hannah/cookieclickerer}\\
+		Utilized jQuery selectors in order to manipulate the browser game €˜Cookie Clicker€™ to click selectable options and play through the game automatically
+		\end{itemize}
 			{\bf Starbucks Coffee Co.} \hfill November 2011 - December 2013 \\
 			{\sl Barista } \hfill Cambridge, MA \
 			\begin{itemize} \itemsep -2pt %reduce space between items
 			\item Trained new team members and was in training for management positions
 			\end{itemize}
 
-\section{EDUCATION} {\sl Bachelor of Arts,} Counseling Psychology \hfill September 2010 - May 2012\\
+\section{EDUCATION} {\bf Counseling Psychology} \hfill September 2010 - May 2012\\
                       % \sl will be bold italic in New Century Schoolbook (or
 	              % any postscript font) and just slanted in
 		      %	Computer Modern (default) font
                 Lesley University, Cambridge, MA 
-                 (70 credits completed) \\
-                
+                 (70 credits completed) \\ 
+                 
+\section{VOLUNTEERING} {\bf Railsbridge}\hfill January 2015\\
+  {\sl Teaching Assistant }\hfill Boston, MA\\
+  RailsBridge teaches women to code in an effort to increase representation of women in technology 
  
 \end{resume}
 \end{document}

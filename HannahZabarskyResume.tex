@@ -4,11 +4,12 @@
 \usepackage{helvet} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
-\setlength{\textwidth}{5.2in} % set width of text portion
+%\setlength{\textwidth}{5.2in} % set width of text portion
 \renewcommand{\familydefault}{\sfdefault}
 
 
 \begin{document}
+
 \begin{resume}\vspace{-1cm}
 
 % Center the name over the entire width of resume:
@@ -19,58 +20,62 @@
 % Again, the address lines must be centered over entire width of resume:
 
 
-\section{CONTACT} 21 Craigie Street, Apt. 2 \hfill \href{mailto:hello@hannahzabarsky.com}{me@hannahzabarsky.com} \\
-				Somerville, MA 02134 \hfill \href{http://www.github.com/hannah}{github.com/hannah} \\
+\section{CONTACT} 520 Boylston Ave E \hfill \href{mailto:hello@hannahzabarsky.com}{hello@hannahzabarsky.com} \\
+				Seattle, WA, 98102 \hfill \href{http://www.github.com/hannah}{github.com/hannah} \\
 				(203) 528-1329 \hfill \href{http://www.hannahzabarsky.com}{hannahzabarsky.com} \\
 
 
-
- \section{EXPERIENCE} {\bf Eyenetra}\hfill December 2014-present \\
+ \section{EXPERIENCE}
+ 			{\bf FasterAgile}\hfill August 2015 -- December 2015 \\
+			{\sl Software Engineer} \hfill Remote\
+			\begin{itemize} \itemsep -2pt
+			\item Primary frontend developer for a responsive, mobile-friendly website with inventory management and invoicing functionality
+			\item  Regularly interacted with nontechnical clients, assessing their needs and translating them into achievable software goals			
+			\item Developed websites with Ember and Rails
+			\item Practiced effective time management in a remote, distributed company
+			\end{itemize}
+			
+ 
+ 			 {\bf Eyenetra}\hfill December 2014 -- August 2015 \\
 			{\sl Software Engineer} \hfill Somerville, MA\
 			\begin{itemize} \itemsep -2pt
-			\item Created a responsive Ember.js web-app with a RESTful Rails API backend
-			\item Implemented responsive design in bootstrap, handling for mobile and various device sizes
-			\item Set up Amazon ec2 instances and configured deployment
-			\item Improved existing documentation by leading in good commit message standards
-			\item Made and maintained company HipChat bot		
+			\item Developed Ember.js web app, utilizing the Bootstrap framework for responsive desktop/mobile use
+			\item Rewrote legacy PHP app as a Rails app with a RESTful API and improved features
+			\item Conducted user research interviews and informal studies
+			\item Designed and implemented responsive frontend, based on user research results
+			\item Set up Amazon ec2 instances, configured deployment process and continuous integration environment
+			\item Lead improvements in existing documentation 
+			\item Created and maintained internal HipChat bot
+			\item Assisted with company spin-down and transition for role and department		
 			\end{itemize}
-
-			{\bf Launch Academy} \hfill February 2014 - April 2014 \\
-			{\sl Apprentice Ruby on Rails Developer} \hfill Boston, MA \
-			\begin{itemize}  \itemsep -2pt %reduce space between items
-				\item Professional training in full-stack Ruby on Rails web development with a focus 				on Agile methods
-				\item  Responsible for production and creation of a new web app, from conception 				and planning to implementation using Ruby on Rails in order to create a fully 					functional app.
-				\item Focus on test-driven development, object-oriented programming in Ruby, and 				pair programming\\	
-				\hspace{1em}{\sl Projects }\\
-			{\bf Breakable Toy: WAYWT } \hfill \href{http://github.com/hannah/waywt}{waywt.me} \\
-                 Implemented image uploading using Rails gem Carrierwave with a focus on testing user's capabilities, with a front end using Foundation to make website scalable for mobile interfaces.
-
-
- 		{\bf IRC Bot}\hfill \href{https://github.com/hzab/bot}{github.com/hannah/bot}\\ 
-		Used the gem Cinch to create an Internet Relay Chat chat bot that could interact with other users and scrape external websites for search query result
-		
-                 {\bf Cookie Clicker Script} \hfill \href{https://github.com/hannah/cookie_clickerer}{github.com/hannah/cookieclickerer}\\
-		Utilized jQuery selectors in order to manipulate the browser game €˜Cookie Clicker€™ to click selectable options and play through the game automatically
-		\end{itemize}
-			{\bf Starbucks Coffee Co.} \hfill November 2011 - December 2013 \\
-			{\sl Barista } \hfill Cambridge, MA \
-			\begin{itemize} \itemsep -2pt %reduce space between items
-			\item Trained new team members and was in training for management positions
-			\end{itemize}
-
-\section{EDUCATION} {\bf Counseling Psychology} \hfill September 2010 - May 2012\\
-                      % \sl will be bold italic in New Century Schoolbook (or
-	              % any postscript font) and just slanted in
-		      %	Computer Modern (default) font
-                Lesley University, Cambridge, MA 
-                 (70 credits completed) \\ 
+				%\hspace{1em}{\sl Projects }\\
+			%{\bf Breakable Toy: WAYWT } \hfill \href{http://github.com/hannah/waywt}{github.com/hannah/waywt} \\
+                 %Implemented image uploading using Rails gem Carrierwave with a focus on testing user's capabilities, with a front end using Foundation to make website scalable for mobile interfaces.\\
+ 		%{\bf IRC Bot}\hfill \href{https://github.com/hzab/bot}{github.com/hannah/bot}\\ 
+		%Used the gem Cinch to create an Internet Relay Chat chat bot that could interact with other users and scrape external websites for search query result\\
+		%{\bf Starbucks Coffee Co.} \hfill November 2011 - December 2013 \\
+		%{\sl Barista } \hfill Cambridge, MA \\
+		%Trained new team members and was in training for management positions
                  
 \section{VOLUNTEERING} {\bf Railsbridge}\hfill January 2015\\
   {\sl Teaching Assistant }\hfill Boston, MA\\
-  RailsBridge teaches women to code in an effort to increase representation of women in technology
+  Worked with new students in an individual setting, gave short presentations and ran smaller group sessions to teach women how to code and learn web development.
   
-\section{TECHNOLOGY} Ruby,  Ruby on Rails, SQL, JavaScript, Ember, JQuery, HTML, CSS \\
-	       PostgreSQL, Git, GitHub, Foundation, Bootstrap \\ 
+\section{TECHNOLOGY} Ruby,  Ruby on Rails, JavaScript, Ember.js, HTML, CSS, Git, Foundation, Bootstrap \\ 
+	       
+\section{EDUCATION} 
+			{\bf Launch Academy} \hfill February 2014 -- April 2014 \\
+			{\sl Apprentice Ruby on Rails Developer} \hfill Boston, MA \
+			\begin{itemize}  \itemsep -2pt %reduce space between items
+			\item Professional training in full-stack Ruby on Rails web development with a focus 				on Agile methods
+			\item  Responsible for production and creation of a new web app, from conception 				and planning to implementation using Ruby on Rails in order to create a fully 					functional app.
+			\item Focus on test-driven development and object-oriented programming in Ruby
+			\end{itemize}
+
+			{\bf Major: Psychology} \hfill September 2010 -- May 2012\\
+                Lesley University, Cambridge, MA 
+                 (70 credits completed) \\ 
+
  
 \end{resume}
 \end{document}
